@@ -1,114 +1,122 @@
-# Project Updates
+# Dark Utilities
 
-### Dark Utilities: Comprehensive Penetration Testing Tool
+> The Holy Tool for Hackers - Redefining the Pentesting Experience
 
-#### Updates
-- 2024/12/09
-    - Refactor Session.setUser to include privateKey in user data
+Dark Utilities is a comprehensive cybersecurity platform designed to make red teaming, adversary operations, and IT infrastructure management simple and accessible. Built with modern web technologies, it provides a seamless interface for security professionals to conduct penetration testing and manage their operations.
 
-- 2024/11/09
-    - Refactor User.exists method to use publicKey instead of privateKey
-    - Hashing the privateKey in client side so the server never know the private key
-    - Implementing PKLM system
-    - Refactor User model to use publicKey instead of privateKey
+## 🚀 Features
 
-- 2024/08/09
-    - Update @prisma/client to version 5.19.1
-    - Refactor import statements and update components
+### 🎯 Core Capabilities
+- **Cross-Platform Compatible** - Works seamlessly across Windows, Linux, Android, and more
+- **Terminal Access** - Full remote terminal access with problem-less connectivity
+- **Python Interpreter** - Built-in Python environment for scripting and automation
+- **Network Scanner** - Advanced network discovery and vulnerability detection
+- **SSH Auto Link** - Automated SSH connection management
+- **API Access** - Complete REST API for automation and integration
 
-- 2024/17/05
-    - Fix alignment and attribute order in Type.cpp
+### 🔍 Intelligence Service
+- **AI-Based Vulnerability Detection** - Automated network scanning with intelligent threat identification
+- **CSINT Data Collection** - Comprehensive data gathering including emails, SMS, and calls
+- **Vector Search Engine** - AI-powered search across datasets larger than 1TB
+- **SS7/Sigtran Interception** - Mobile device interception supporting iOS 16+ and Android 12+
+- **Network Auto-Replication** - Intelligent agent propagation across network infrastructure
 
-- 2024/8/04
-    - Refactor file reading and handle non-existent files
-    - Adding shellcode execution
-    - Implementing fuzzer logic in the agent
+### 💼 Enterprise Features
+- **Self-Hosted Nodes** - Deploy your own infrastructure
+- **Shellcode Generator** - Advanced payload creation tools
+- **Scribe Compatibility** - Integration with existing security tools
+- **Apple Silicon Support** - Optimized for M1/M2 processors
+- **Built-In DHCP Server** - Network infrastructure management
+- **Multi-Site VPN** - Secure tunneling across multiple locations
+- **24/7 Support** - Enterprise-grade assistance
 
-- 2024/8/03
-    - Refactor owner assignment logic in Device.ts
+## 🏗️ Architecture
 
-- 2024/4/03
-    - Refactor Bootstrap.css, Users.tsx, and Utils.ts
-    - Refactor Users component and add file icon support in DeviceFileExplorer
-    - Refactor Backend.ts and DeviceInterpreter.tsx
-    - Add notification for new device registration
-    - Implementation of file reader
+The project follows a microservices architecture with the following components:
 
-- 2024/4/02
-    - Fix file reading bug and handle non-existent files
-    - Add getFile and writeFile classes for file manipulation
-    - Update bun.lockb file
-    - Remove unused code and dependencies
+```
+dark-utilities/
+├── command-and-control/     # C2 server infrastructure
+├── payloads/               # Agent payloads
+│   ├── alpha/             # Primary agent implementation (Generic)
+│   └── bravo/             # Secondary agent variant (Shellcode compatible)
+├── services/
+│   ├── black-hand/        # The entreprise only Intelligence Framework
+│   └── builder/           # Flask-based API for template management
+└── website/               # Frontend applications
+    ├── backend/           # Backend API services
+    └── frontend/          # Main application interface
+```
 
-- 2024/04/01
-    - Add delete ticket functionality and notifications
-    - Add aliases for services and update imports
-    - Refactor MinerManagerForm component
-    - Add loader and stop loader after login
+### Technology Stack
 
-- 2024/04/30
-    - Fix API response in BuildsRoutes and add success message in UsersRoutes
-    - Add admin pages and update notifications badge
+- **Frontend**: React + TypeScript + Vite
+- **Backend**: Flask (Python) + Node.js
+- **Database**: Prisma ORM
+- **Styling**: Bootstrap + Custom CSS
+- **Package Management**: Bun
+- **Containerization**: Docker
 
-- 2024/03/28
-    - Add API key management endpoints
+## 🛠️ Development Setup
 
-- 2024/03/27
-    - Update build endpoint and create build with target and architecture
+> **Note**: This is a proprietary platform. The following information is for development team reference only.
 
-- 2024/3/24
-    - Update dependencies and fix imports
+## 🎯 Platform Access
 
-- 2024/3/19
-    - Added isOnline method to Devices class
+### Web Interface
 
-- 2024/3/18
-    - (backend) Refactor DevicesRoutes.ts to improve code organization and add HttpStreamDriver for process retrieval
-    - (react-app) Refactor import order and fix data parsing in DeviceTasksManager.tsx
+1. **Visit the platform** at [https://dark-utilities.com](https://dark-utilities.com)
+2. **Create an account** or login with existing credentials
+3. **Navigate to the dashboard** to manage your operations
+4. **Access terminal** for remote command execution
+5. **Use API endpoints** for automation and integration
 
-- **Enhanced Beacon Payload:**
-  - Implemented improvements to the Beacon payload for more efficient and secure covert communication.
-  - Enhanced stability and reliability of the communication channel between attacker and target systems.
+### API Integration
 
-- **Expanded Post-Exploitation Modules:**
-  - Added new post-exploitation modules for advanced actions on compromised systems, including:
-    - Enhanced Python scripting capabilities.
-    - Additional shell command execution options.
-    - Improved privilege escalation techniques.
-    - Expanded File Explorer and Process Explorer functionalities.
+## 💰 Pricing
 
-- **Refined Port Forwarding and Pivoting:**
-  - Streamlined port forwarding and pivoting techniques for smoother network traversal.
-  - Improved persistence mechanisms for sustained access to target networks.
+### Access Plan - 99.99 CHF
+- Cross-platform compatibility
+- Terminal access
+- Python interpreter
+- Suspect activity notifications
+- Network scanner
+- SSH auto link
+- API access
 
-- **Collaboration and Reporting Enhancements:**
-  - Implemented features to facilitate better collaboration among team members during red team exercises.
-  - Enhanced reporting capabilities for generating comprehensive assessment reports.
+### Enterprise Plan
+- All Access features
+- Self-hosted nodes
+- Premium support
+- Custom integrations
+- Dedicated infrastructure
 
-#### Challenges
+*Enterprise pricing requires ID verification and custom quotation.*
 
-- **Integration Complexity:**
-  - Addressed challenges related to the integration of new modules and features while maintaining stability and compatibility with existing functionality.
+## 🔒 Security & Compliance
 
-- **Usability Improvements:**
-  - Identified areas for improvement in user interface and user experience to enhance usability for both novice and experienced users.
+- **Swiss Hosted** - Servers located in Switzerland for maximum privacy
+- **End-to-End Encryption** - All communications are encrypted
+- **Zero-Log Policy** - No activity logs are maintained
+- **Compliance Ready** - Meets enterprise security standards
 
-#### Next Steps
+## 📞 Support & Contact
 
-- **Research and Development:**
-  - Explore advancements in covert communication techniques to further enhance the stealthiness and resilience of the Beacon payload.
-  - Investigate new post-exploitation tactics and techniques to stay ahead of evolving security threats.
+- **Platform Access**: [https://dark-utilities.com](https://dark-utilities.com)
+- **Documentation**: Available in platform dashboard
+- **Enterprise Inquiries**: Contact through platform
+- **Community**: [GitHub Organization](https://github.com/Dark-Utilities) (documentation only)
 
-- **Community Engagement:**
-  - Foster community engagement through open-source contributions and collaboration to enrich the Dark Utilities ecosystem.
+## ⚖️ Legal Notice
 
-- **Ethical Considerations:**
-  - Continuously assess and reinforce ethical guidelines for the responsible use of Dark Utilities to mitigate potential misuse.
+This software is intended for authorized security testing and educational purposes only. Users are responsible for complying with all applicable laws and regulations in their jurisdiction. Dark Utilities is a proprietary platform - unauthorized access, reproduction, or distribution is strictly prohibited.
+
+## 📄 License
+
+**Proprietary Software** - All rights reserved. This software and its documentation are proprietary and confidential. No part of this software may be reproduced, distributed, or transmitted in any form without explicit written permission from Dark Utilities.
 
 ---
 
-## Overall Progress
+**Engineered by the Dark Utilities Team**
 
-Dark Utilities continues to evolve as a leading penetration testing tool, with ongoing efforts focused on enhancing functionality, improving usability, and fostering a responsible security culture within the cybersecurity community. As we navigate the ever-changing landscape of offensive security, we remain committed to delivering robust solutions that empower professionals to safeguard digital assets and infrastructure effectively. Stay tuned for more updates on our journey.
-
-If you have any feedback or suggestions, feel free to reach out. We value your input and support as we strive to push the boundaries of cybersecurity innovation.
+*Proudly hosted in the Swiss Confederation 🇨🇭*
